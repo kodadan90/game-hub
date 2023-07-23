@@ -1,6 +1,24 @@
+import {Box, Flex, Grid, GridItem, HStack, Show} from "@chakra-ui/react";
+import { useState } from "react";
+import React from 'react';
+import './App.css';
+import NavBar from "./components/NavBar"
 
-const App: React.FC = () => {
-
-};
+function App() {
+    return <Grid templateAreas={{
+        base: `"nav" "main"`,
+        lg: `"nav nav" "aside main"`
+    }}>
+<GridItem area='nav'>
+    <NavBar onSearch={function (searchText: string): void {
+                throw new Error("Function not implemented.");
+            } } />
+    </GridItem>
+<Show above="lg">
+<GridItem area='aside'>Aside</GridItem>
+</Show>
+<GridItem area='main'>Main</GridItem>
+    </Grid>
+}
 
 export default App
