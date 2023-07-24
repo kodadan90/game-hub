@@ -26,4 +26,4 @@ function App() {
     </Grid>
 }
 
-export default App
+export default App; 
