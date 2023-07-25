@@ -4,6 +4,7 @@ import GameGrid from "./components/GameGrid";
 import React from 'react';
 import './App.css';
 import NavBar from "./components/NavBar"
+import GenreList from "./components/GenreList";
 
 function App() {
     return <Grid templateAreas={{
@@ -17,6 +18,7 @@ function App() {
     </GridItem>
 <Show above="lg">
 <GridItem area='aside'>
+    <GenreList />
     Aside
 </GridItem>
 </Show>

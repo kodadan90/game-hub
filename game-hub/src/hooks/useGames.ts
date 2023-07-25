@@ -20,8 +20,7 @@ export interface Platform {
        results: Game[]
    }
 
-const useGames = () => {
-    
+const useGames = () => {  
   const [games, setGames] = useState<Game[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
