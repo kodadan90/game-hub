@@ -11,7 +11,7 @@ function App() {
         lg: `"nav nav" "aside main"`
     }}>
 <GridItem area='nav'>
-    <NavBar onSearch={function (searchText: string): void {
+    <NavBar onSearch={function (): void {
                 throw new Error("Function not implemented.");
             } } />
     </GridItem>
